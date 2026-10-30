@@ -1,0 +1,2 @@
+import AppShell from "@/components/AppShell";
+export default function SettingsPage(){return <AppShell><div className="content"><div className="eyebrow">WORKSPACE CONFIGURATION</div><h1 className="page-title">Settings</h1><p className="subtle">School profile, teacher preferences, and document settings.</p><div className="notice" style={{marginTop:24}}>Settings are not yet connected to a user account or cloud database.</div></div></AppShell>}
