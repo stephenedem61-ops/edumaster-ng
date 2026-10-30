@@ -42,8 +42,8 @@ export async function POST(request: Request) {
         "Use only references that can be identified from the supplied information. Do not invent textbook titles, authors, page numbers, curriculum codes, or official syllabus claims. If no reference is supplied, recommend that the teacher insert the approved textbook or current syllabus rather than fabricating a citation.",
         "Do not force religious content into a lesson. Include a short, appropriate Bible reference only where the subject or topic genuinely supports it; otherwise mark it Not applicable.",
         "End with a short teacher-review note identifying any curriculum details that need checking."
-      ].join("\n"),
-    data.kind === "exam"
+      ].join("\n")
+    : data.kind === "exam"
       ? "Create original assessment questions, not copied past questions. Include clear instructions, balanced coverage, appropriate difficulty, and a separate answer key. Make the questions suitable for the stated Nigerian class level."
       : "Prepare a marking scheme with model answers, clear mark allocations, acceptable alternatives, and a total that matches the requested marks.";
 
